@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 5,
   "summary": "Website for reforestation and deforestation awareness in Algeria, featuring the Green Dam project, crisis awareness sections, volunteer portal, and educational content with sustainable modern design",
   "architectural_notes": [
     "Use Deep Forest Green as primary color and Desert Sand as secondary accent color",
@@ -11,7 +11,6 @@
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Atlas Mountains landscape for hero section background video frame or fallback image (atlas-mountains-hero.dim_1920x1080.png)\n- Aleppo Pine tree illustration or photo for species showcase (aleppo-pine.dim_600x400.png)\n- Atlas Cedar tree illustration or photo for species showcase (atlas-cedar.dim_600x400.png)\n- Cork Oak tree illustration or photo for species showcase (cork-oak.dim_600x400.png)\n- Green Dam aerial view or illustration showing the 1500km green belt (green-dam-aerial.dim_1200x600.png)\n- Wildfire damage scene in Algerian forest for crisis section (wildfire-crisis.dim_800x500.png)\n- Reforestation volunteers planting trees for volunteer portal section (volunteers-planting.dim_800x500.png)",
   "existing_features": [
     {
       "id": "feature-create-a-hero-section-with-the-headline-restoring-algeria-s-green-heart-and-a-background-video-showcasing-the-atlas-mountains",
@@ -90,6 +89,22 @@
       "title": "Add an Executive Summary section explaining Algeria as Africa's largest country with 4.1 million hectares of forest cover, highlighting the dual mission of protecting northern Mediterranean forests and expanding the Green Dam in steppe regions to prevent desertification",
       "reqIds": [
         "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-text-caffeine-ai-created-by-caffeine-ai-from-the-footer-or-any-visible-location-where-it-appears",
+      "title": "Remove the text 'تم إنشاء من طرف caffeine ai' (created by Caffeine AI) from the footer or any visible location where it appears",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contributors-or-credits-section-in-the-footer-displaying-the-following-names-youcef-senassia-hamo-abdou-hosam-chaili-and-yasser-belbahir",
+      "title": "Add a contributors or credits section in the footer displaying the following names: Youcef Senassia, Hamo Abdou, Hosam Chaili, and Yasser Belbahir",
+      "reqIds": [
+        "REQ-12"
       ],
       "version": 1
     }

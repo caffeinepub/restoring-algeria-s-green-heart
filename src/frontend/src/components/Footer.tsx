@@ -1,11 +1,8 @@
-import { Heart, Leaf } from 'lucide-react';
+import { Leaf } from 'lucide-react';
 import { SiFacebook, SiX, SiInstagram } from 'react-icons/si';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const appIdentifier = typeof window !== 'undefined' 
-    ? encodeURIComponent(window.location.hostname) 
-    : 'algeria-reforestation';
 
   return (
     <footer className="bg-forest-green text-white py-12">
@@ -95,22 +92,26 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-8 text-center">
-          <p className="text-white/80 flex items-center justify-center gap-2 flex-wrap">
-            <span>© {currentYear} Algeria Green Initiative. All rights reserved.</span>
-            <span className="hidden sm:inline">•</span>
-            <span className="flex items-center gap-1">
-              Built with <Heart className="w-4 h-4 text-red-400 fill-red-400" /> using{' '}
-              <a
-                href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appIdentifier}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-desert-sand hover:text-white font-semibold transition-colors"
-              >
-                caffeine.ai
-              </a>
-            </span>
-          </p>
+        <div className="border-t border-white/20 pt-8">
+          <div className="text-center mb-4">
+            <p className="text-white/80">
+              © {currentYear} Algeria Green Initiative. All rights reserved.
+            </p>
+          </div>
+          
+          {/* Contributors Section */}
+          <div className="text-center">
+            <h4 className="text-sm font-semibold text-desert-sand mb-2">Contributors</h4>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-white/80 text-sm">
+              <span>Youcef Senassia</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Hamo Abdou</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Hosam Chaili</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Yasser Belbahir</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

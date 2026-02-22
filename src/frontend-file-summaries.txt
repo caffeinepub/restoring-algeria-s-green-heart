@@ -10,7 +10,7 @@
   "frontend/src/components/UrbanGreening.tsx": "Section covering urban greening initiatives, green ratio laws, and heat island mitigation efforts in Algiers and Oran.",
   "frontend/src/components/VolunteerPortal.tsx": "Interactive portal with tabbed interface for signing up for planting events and adopting trees, integrated with backend using React Query mutations.",
   "frontend/src/components/Blog.tsx": "Educational blog section displaying two articles fetched from the backend with a card-based selection interface.",
-  "frontend/src/components/Footer.tsx": "Comprehensive footer with branding, quick links, social media connections, and required attribution to caffeine.ai with UTM tracking.",
+  "frontend/src/components/Footer.tsx": "Comprehensive footer with branding, quick links, social media connections, and a contributors section displaying the four team member names (Youcef Senassia, Hamo Abdou, Hosam Chaili, Yasser Belbahir) styled with the forest green and desert sand color scheme.",
   "frontend/src/index.css": "Global styles with custom OKLCH color system implementing Deep Forest Green and Desert Sand color palette for both light and dark modes, plus custom scrollbar styling.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with custom forest-green and desert-sand color tokens, Inter font family, and design system tokens."
 }

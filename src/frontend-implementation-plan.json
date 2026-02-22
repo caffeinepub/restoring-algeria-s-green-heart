@@ -1,223 +1,36 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Algeria Reforestation Awareness Website - Frontend Implementation",
+  "title": "Remove Caffeine AI credit and add contributor names",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Create hero section with 'Restoring Algeria's Green Heart' headline and Atlas Mountains background video",
+      "id": "REQ-11",
+      "summary": "Remove Caffeine AI credit text from the footer",
       "acceptanceCriteria": [
-        "Hero section displays the exact headline 'Restoring Algeria's Green Heart'",
-        "Background video element is implemented showing Atlas Mountains imagery",
-        "Video plays automatically on page load with appropriate fallback for browsers that block autoplay"
+        "No Caffeine AI credit text appears anywhere on the website",
+        "The removal does not break the footer layout or styling"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "create",
-          "description": "Create hero section component with headline 'Restoring Algeria's Green Heart', background video element with autoplay and muted attributes, and fallback to the generated image frontend/public/assets/generated/atlas-mountains-hero.dim_1920x1080.png for browsers that block autoplay or if video fails to load"
-        },
-        {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Import and render the Hero component at the top of the main application layout"
+          "description": "Remove the text 'تم إنشاء من طرف caffeine ai' (created by Caffeine AI) from the footer component while preserving the existing structure and styling"
         }
       ]
     },
     {
-      "id": "REQ-2",
-      "summary": "Build Crisis section explaining deforestation crisis with detailed content on wildfires, climatic stress, illegal logging, and soil erosion",
+      "id": "REQ-12",
+      "summary": "Add contributors section to footer with four contributor names",
       "acceptanceCriteria": [
-        "Crisis section includes all four deforestation factors: wildfires, climatic stress, human impact, and soil erosion",
-        "Content specifically mentions Kabylie and El Tarf regions and the 2021-2024 timeframe",
-        "Statistics are prominently displayed including the '30,000+ hectares annually' figure",
-        "Temperature reference of 45°C is included in the climatic stress content"
+        "All four contributor names are displayed in the footer",
+        "Names are formatted consistently and legibly",
+        "The contributors section integrates visually with the existing footer design using forest green and desert sand color scheme"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Crisis.tsx",
-          "operation": "create",
-          "description": "Create Crisis section component with four subsections covering wildfires (mentioning Kabylie and El Tarf regions, 2021-2024 timeframe), climatic stress (45°C+ heatwaves and droughts), human impact (illegal logging and overgrazing), and soil erosion. Display the statistic '30,000+ hectares annually' prominently. Use the generated image frontend/public/assets/generated/wildfire-crisis.dim_800x500.png to illustrate the wildfire content"
-        },
-        {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Import and render the Crisis component after the Hero component in the main application layout"
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Create Solution section for Green Dam project explaining its 1,500 km x 20 km dimensions, 1970s origin, and climate stability role",
-      "acceptanceCriteria": [
-        "Solution section or dedicated page exists for the Green Dam project",
-        "Content includes the dimensions: 1,500 km long and 20 km wide",
-        "Historical context mentions the 1970s launch and current revitalization",
-        "Explanation covers both the biological shield function and continental climate stability role"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Solution.tsx",
-          "operation": "create",
-          "description": "Create Solution section component dedicated to the Green Dam (Le Barrage Vert) project. Include content explaining dimensions (1,500 km long and 20 km wide), historical context (launched in 1970s, currently being revitalized), its role as a biological shield against Sahara's northern expansion, and its importance for continental climate stability. Use the generated image frontend/public/assets/generated/green-dam-aerial.dim_1200x600.png to show the green belt"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the Solution component after the Crisis component in the main application layout"
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Build interactive volunteer portal for planting event sign-ups and digital tree adoption",
-      "acceptanceCriteria": [
-        "Volunteer portal section includes a sign-up form for local planting events",
-        "Digital 'adopt a tree' feature is implemented with user interaction capability",
-        "Backend stores volunteer sign-ups and tree adoption records",
-        "Users can view their adopted trees or registered events"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/VolunteerPortal.tsx",
-          "operation": "create",
-          "description": "Create VolunteerPortal component with two main features: a sign-up form for local planting events (calling backend signUpForEvent method) and an 'adopt a tree' interface (calling backend adoptTree method). Display user's registered events using getUserEvents backend method. Use the generated image frontend/public/assets/generated/volunteers-planting.dim_800x500.png to illustrate volunteer activities. Include form validation and success/error feedback"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the VolunteerPortal component after the Solution component in the main application layout"
-        }
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "summary": "Create educational blog section with specific articles on arid soil planting and mycorrhizae importance",
-      "acceptanceCriteria": [
-        "Blog section exists with these two specific article titles",
-        "Backend supports blog post storage and retrieval",
-        "Articles are accessible and display full educational content",
-        "Blog structure allows for future article additions"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Blog.tsx",
-          "operation": "create",
-          "description": "Create Blog section component that fetches and displays blog posts using the backend getBlogPost method. Include the two required articles: 'How to plant in arid soil' and 'The Importance of Mycorrhizae in Algerian Reforestation'. Structure the component to support multiple articles with title, content display, and a list/grid layout for article navigation"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the Blog component after the VolunteerPortal component in the main application layout"
-        }
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "summary": "Create species showcase section featuring Aleppo Pine, Atlas Cedar, and Cork Oak with detailed descriptions",
-      "acceptanceCriteria": [
-        "Species showcase displays all three trees: Aleppo Pine, Atlas Cedar, and Cork Oak",
-        "Each species includes its scientific name in parentheses",
-        "Aleppo Pine description mentions drought resilience and backbone role",
-        "Atlas Cedar description includes endangered status and the specific parks Chréa and Theniet El Had",
-        "Cork Oak description covers both cork industry economics and biodiversity importance"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/SpeciesShowcase.tsx",
-          "operation": "create",
-          "description": "Create SpeciesShowcase component displaying three key forest species. Include Aleppo Pine (Pinus halepensis) with drought resilience and backbone role description using frontend/public/assets/generated/aleppo-pine.dim_600x400.png. Include Atlas Cedar (Cedrus atlantica) with endangered status and mention of Chréa and Theniet El Had parks using frontend/public/assets/generated/atlas-cedar.dim_600x400.png. Include Cork Oak (Quercus suber) with economic importance for cork industry and Mediterranean biodiversity using frontend/public/assets/generated/cork-oak.dim_600x400.png. Display in a card or grid layout with images and detailed descriptions"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the SpeciesShowcase component after the Blog component in the main application layout"
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Add National Reforestation Plan section explaining state-led initiative to plant billions of trees",
-      "acceptanceCriteria": [
-        "Section explains the PNR initiative with the 'billions of trees' and 'next decade' timeframe",
-        "Content specifically lists the three focus species: Aleppo Pine, Cork Oak, and Atlas Cedar",
-        "State-led nature of the initiative is clearly communicated"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/NationalPlan.tsx",
-          "operation": "create",
-          "description": "Create NationalPlan component explaining the National Reforestation Plan (PNR) as a state-led initiative aiming to plant billions of trees over the next decade. Emphasize the focus on three high-value species: Aleppo Pine, Cork Oak, and Atlas Cedar. Present this as an informational section with clear, hopeful messaging about the government commitment"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the NationalPlan component after the SpeciesShowcase component in the main application layout"
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Include Urban Greening content about green ratio laws combating heat island effects in Algiers and Oran",
-      "acceptanceCriteria": [
-        "Urban Greening section exists with content about green ratio laws",
-        "Heat island effect is explained as the problem being addressed",
-        "Specific cities Algiers and Oran are mentioned as examples"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/UrbanGreening.tsx",
-          "operation": "create",
-          "description": "Create UrbanGreening component explaining new laws requiring 'green ratios' in urban development. Describe how these laws combat the heat island effect specifically in cities like Algiers and Oran. Present this as a modern, progressive urban policy initiative"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the UrbanGreening component after the NationalPlan component in the main application layout"
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Implement Sustainable & Modern design aesthetic with Deep Forest Green primary and Desert Sand secondary colors",
-      "acceptanceCriteria": [
-        "Primary color scheme uses Deep Forest Green consistently across UI elements",
-        "Desert Sand is applied as secondary accent color",
-        "Overall design aesthetic conveys sustainability and modernity",
-        "Color palette is applied to buttons, headers, navigation, and key visual elements"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Configure custom color palette in Tailwind config. Define Deep Forest Green as primary color (use values like #1B4D3E or #2C5F2D for various shades) and Desert Sand as secondary accent color (use values like #E5C29F or #D4A574). Map these to Tailwind's primary and secondary color tokens for consistent usage across the application"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add CSS custom properties for the color palette (--color-primary-forest-green, --color-secondary-desert-sand) and apply them to body, headings, and key UI elements. Ensure the Sustainable & Modern aesthetic is reflected in typography, spacing, and overall visual hierarchy. Set global styles that establish the professional, urgent yet hopeful tone"
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Add Executive Summary section explaining Algeria's size, forest cover, and dual mission for biodiversity protection",
-      "acceptanceCriteria": [
-        "Executive Summary section establishes Algeria as Africa's largest country",
-        "Content mentions the 4.1 million hectares forest cover statistic",
-        "Dual mission is clearly stated: protecting northern biodiversity and expanding Green Dam",
-        "Geographic context includes Mediterranean forests in the north and Sahara in the south"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ExecutiveSummary.tsx",
-          "operation": "create",
-          "description": "Create ExecutiveSummary component establishing Algeria as Africa's largest country with 4.1 million hectares of forest cover. Explain the geographic context (Mediterranean forests in the north, Sahara in the south) and the dual mission: protecting existing biodiversity in the north and expanding the Green Dam to prevent desertification in steppe regions. Position this as an introductory overview section"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Import and render the ExecutiveSummary component after the Hero component and before the Crisis component in the main application layout to establish context early"
+          "description": "Add a contributors or credits section in the footer displaying the names: Youcef Senassia, Hamo Abdou, Hosam Chaili, and Yasser Belbahir. Integrate the section visually using the existing forest green and desert sand color scheme, maintaining consistency with the current footer layout and navigation structure"
         }
       ]
     }
