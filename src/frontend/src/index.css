@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Deep Forest Green - Primary Color */
+        --forest-green: 0.35 0.15 155;
+        --forest-green-light: 0.45 0.12 155;
+        --forest-green-dark: 0.25 0.18 155;
+        
+        /* Desert Sand - Secondary Color */
+        --desert-sand: 0.82 0.08 65;
+        --desert-sand-dark: 0.72 0.10 60;
+        
+        /* Base colors using OKLCH */
+        --background: 0.98 0.005 100;
+        --foreground: 0.15 0.02 155;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.02 155;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.02 155;
+        
+        --primary: 0.35 0.15 155;
+        --primary-foreground: 0.98 0.005 100;
+        
+        --secondary: 0.82 0.08 65;
+        --secondary-foreground: 0.15 0.02 155;
+        
+        --muted: 0.95 0.01 100;
+        --muted-foreground: 0.50 0.03 155;
+        
+        --accent: 0.82 0.08 65;
+        --accent-foreground: 0.15 0.02 155;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.005 100;
+        
+        --border: 0.90 0.01 100;
+        --input: 0.90 0.01 100;
+        --ring: 0.35 0.15 155;
+        
+        --chart-1: 0.35 0.15 155;
+        --chart-2: 0.82 0.08 65;
+        --chart-3: 0.45 0.12 155;
+        --chart-4: 0.72 0.10 60;
+        --chart-5: 0.55 0.22 25;
+        
+        --sidebar: 0.98 0.005 100;
+        --sidebar-foreground: 0.15 0.02 155;
+        --sidebar-primary: 0.35 0.15 155;
+        --sidebar-primary-foreground: 0.98 0.005 100;
+        --sidebar-accent: 0.95 0.01 100;
+        --sidebar-accent-foreground: 0.15 0.02 155;
+        --sidebar-border: 0.90 0.01 100;
+        --sidebar-ring: 0.35 0.15 155;
+    }
+
+    .dark {
+        --background: 0.15 0.02 155;
+        --foreground: 0.98 0.005 100;
+        
+        --card: 0.20 0.03 155;
+        --card-foreground: 0.98 0.005 100;
+        
+        --popover: 0.22 0.03 155;
+        --popover-foreground: 0.98 0.005 100;
+        
+        --primary: 0.45 0.12 155;
+        --primary-foreground: 0.15 0.02 155;
+        
+        --secondary: 0.72 0.10 60;
+        --secondary-foreground: 0.98 0.005 100;
+        
+        --muted: 0.25 0.03 155;
+        --muted-foreground: 0.70 0.02 100;
+        
+        --accent: 0.72 0.10 60;
+        --accent-foreground: 0.98 0.005 100;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.15 0.02 155;
+        
+        --border: 1 0 0 / 15%;
+        --input: 1 0 0 / 20%;
+        --ring: 0.45 0.12 155;
+        
+        --chart-1: 0.45 0.12 155;
+        --chart-2: 0.82 0.08 65;
+        --chart-3: 0.35 0.15 155;
+        --chart-4: 0.72 0.10 60;
+        --chart-5: 0.60 0.20 25;
+        
+        --sidebar: 0.20 0.03 155;
+        --sidebar-foreground: 0.98 0.005 100;
+        --sidebar-primary: 0.45 0.12 155;
+        --sidebar-primary-foreground: 0.98 0.005 100;
+        --sidebar-accent: 0.25 0.03 155;
+        --sidebar-accent-foreground: 0.98 0.005 100;
+        --sidebar-border: 1 0 0 / 15%;
+        --sidebar-ring: 0.45 0.12 155;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: oklch(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+    background: oklch(var(--forest-green));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: oklch(var(--forest-green-dark));
+}

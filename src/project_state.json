@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website for reforestation and deforestation awareness in Algeria, featuring the Green Dam project, crisis awareness sections, volunteer portal, and educational content with sustainable modern design",
+  "architectural_notes": [
+    "Use Deep Forest Green as primary color and Desert Sand as secondary accent color",
+    "Sustainable & Modern aesthetic throughout the site",
+    "Professional, urgent, yet hopeful tone for all content",
+    "SEO optimization for keywords: Reforestation Algeria, Green Dam Project, Stop Desertification, Algerian Forest Fire Recovery, Eco-Tourism Algeria",
+    "Multi-language support (English primary, Arabic noted in user request)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Atlas Mountains landscape for hero section background video frame or fallback image (atlas-mountains-hero.dim_1920x1080.png)\n- Aleppo Pine tree illustration or photo for species showcase (aleppo-pine.dim_600x400.png)\n- Atlas Cedar tree illustration or photo for species showcase (atlas-cedar.dim_600x400.png)\n- Cork Oak tree illustration or photo for species showcase (cork-oak.dim_600x400.png)\n- Green Dam aerial view or illustration showing the 1500km green belt (green-dam-aerial.dim_1200x600.png)\n- Wildfire damage scene in Algerian forest for crisis section (wildfire-crisis.dim_800x500.png)\n- Reforestation volunteers planting trees for volunteer portal section (volunteers-planting.dim_800x500.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-with-the-headline-restoring-algeria-s-green-heart-and-a-background-video-showcasing-the-atlas-mountains",
+      "title": "Create a hero section with the headline 'Restoring Algeria's Green Heart' and a background video showcasing the Atlas Mountains",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-crisis-section-that-explains-the-deforestation-crisis-with-detailed-content-on-wildfires-kabylie-and-el-tarf-regions-2021-2024-climatic-stress-droughts-and-heatwaves-exceeding-45-c-illegal-logging-and-overgrazing-and-soil-erosion-including-the-statistic-loss-of-30-000-hectares-annually",
+      "title": "Build a Crisis section that explains the deforestation crisis with detailed content on wildfires (Kabylie and El Tarf regions, 2021-2024), climatic stress (droughts and heatwaves exceeding 45°C), illegal logging and overgrazing, and soil erosion, including the statistic 'Loss of 30,000+ hectares annually'",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-solution-section-or-page-for-the-green-dam-le-barrage-vert-project-explaining-it-as-a-1-500-km-long-and-20-km-wide-green-belt-launched-in-the-1970s-and-being-revitalized-acting-as-a-biological-shield-against-sahara-s-northern-expansion-and-its-role-in-continental-climate-stability",
+      "title": "Create a dedicated Solution section or page for the Green Dam (Le Barrage Vert) project, explaining it as a 1,500 km long and 20 km wide green belt launched in the 1970s and being revitalized, acting as a biological shield against Sahara's northern expansion and its role in continental climate stability",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-interactive-volunteer-portal-where-users-can-sign-up-for-local-planting-events-and-digitally-adopt-a-tree",
+      "title": "Build an interactive volunteer portal where users can sign up for local planting events and digitally 'adopt a tree'",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-educational-blog-section-with-articles-titled-how-to-plant-in-arid-soil-and-the-importance-of-mycorrhizae-in-algerian-reforestation",
+      "title": "Create an educational blog section with articles titled 'How to plant in arid soil' and 'The Importance of Mycorrhizae in Algerian Reforestation'",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-key-forest-species-showcase-section-featuring-aleppo-pine-pinus-halepensis-described-as-the-backbone-of-algerian-forests-with-drought-resilience-atlas-cedar-cedrus-atlantica-as-an-endangered-high-altitude-species-in-chr-a-and-theniet-el-had-parks-and-cork-oak-quercus-suber-with-its-economic-importance-for-cork-industry-and-mediterranean-biodiversity",
+      "title": "Create a key forest species showcase section featuring Aleppo Pine (Pinus halepensis) described as the backbone of Algerian forests with drought resilience, Atlas Cedar (Cedrus atlantica) as an endangered high-altitude species in Chréa and Theniet El Had parks, and Cork Oak (Quercus suber) with its economic importance for cork industry and Mediterranean biodiversity",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-section-explaining-the-national-reforestation-plan-pnr-as-a-state-led-initiative-to-plant-billions-of-trees-over-the-next-decade-focusing-on-aleppo-pine-cork-oak-and-atlas-cedar-species",
+      "title": "Add a section explaining the National Reforestation Plan (PNR) as a state-led initiative to plant billions of trees over the next decade, focusing on Aleppo Pine, Cork Oak, and Atlas Cedar species",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-include-content-about-urban-greening-initiatives-explaining-new-laws-requiring-green-ratios-in-urban-development-to-combat-heat-island-effects-in-cities-like-algiers-and-oran",
+      "title": "Include content about Urban Greening initiatives explaining new laws requiring 'green ratios' in urban development to combat heat island effects in cities like Algiers and Oran",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sustainable-modern-visual-design-aesthetic-with-deep-forest-green-as-the-primary-color-and-desert-sand-as-the-secondary-accent-color-throughout-the-entire-website",
+      "title": "Implement a Sustainable & Modern visual design aesthetic with Deep Forest Green as the primary color and Desert Sand as the secondary accent color throughout the entire website",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-executive-summary-section-explaining-algeria-as-africa-s-largest-country-with-4-1-million-hectares-of-forest-cover-highlighting-the-dual-mission-of-protecting-northern-mediterranean-forests-and-expanding-the-green-dam-in-steppe-regions-to-prevent-desertification",
+      "title": "Add an Executive Summary section explaining Algeria as Africa's largest country with 4.1 million hectares of forest cover, highlighting the dual mission of protecting northern Mediterranean forests and expanding the Green Dam in steppe regions to prevent desertification",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with 'Restoring Algeria's Green Heart' headline and Atlas Mountains background video",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Crisis section with wildfire and climate change impact statistics",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Solution section/page dedicated to the Green Dam project",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Interactive volunteer portal for planting event sign-ups and 'adopt a tree' feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Educational blog with articles on arid soil planting and mycorrhizae importance",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Key forest species showcase (Aleppo Pine, Atlas Cedar, Cork Oak) with educational details",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Restoring Algeria's Green Heart",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

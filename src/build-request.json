@@ -1,0 +1,221 @@
+{
+  "kind": "build_request",
+  "title": "Build Algeria Reforestation Awareness Website",
+  "projectName": "Algeria Green Heart",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a hero section with the headline 'Restoring Algeria's Green Heart' and a background video showcasing the Atlas Mountains",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "The Hero Section: A bold headline like \"Restoring Algeria's Green Heart\" with a background video of the Atlas Mountains."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays the exact headline 'Restoring Algeria's Green Heart'",
+        "Background video element is implemented showing Atlas Mountains imagery",
+        "Video plays automatically on page load with appropriate fallback for browsers that block autoplay"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a Crisis section that explains the deforestation crisis with detailed content on wildfires (Kabylie and El Tarf regions, 2021-2024), climatic stress (droughts and heatwaves exceeding 45°C), illegal logging and overgrazing, and soil erosion, including the statistic 'Loss of 30,000+ hectares annually'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "The \"Crisis\" Section: Detailed text on the impact of wildfires and climate change, using high-impact statistics (e.g., \"Loss of 30,000+ hectares annually\").",
+          "Wildfires: The most immediate threat. Between 2021 and 2024, massive fires destroyed thousands of hectares, particularly in the Kabylie and El Tarf regions."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Crisis section includes all four deforestation factors: wildfires, climatic stress, human impact, and soil erosion",
+        "Content specifically mentions Kabylie and El Tarf regions and the 2021-2024 timeframe",
+        "Statistics are prominently displayed including the '30,000+ hectares annually' figure",
+        "Temperature reference of 45°C is included in the climatic stress content"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a dedicated Solution section or page for the Green Dam (Le Barrage Vert) project, explaining it as a 1,500 km long and 20 km wide green belt launched in the 1970s and being revitalized, acting as a biological shield against Sahara's northern expansion and its role in continental climate stability",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "The \"Solution\" Section: A dedicated page for the Green Dam, explaining its role in continental climate stability.",
+          "The Green Dam (Le Barrage Vert): Originally launched in the 1970s, this project is being revitalized. It is a massive green belt 1,500 km long and 20 km wide, acting as a biological shield against the Sahara's northern expansion."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Solution section or dedicated page exists for the Green Dam project",
+        "Content includes the dimensions: 1,500 km long and 20 km wide",
+        "Historical context mentions the 1970s launch and current revitalization",
+        "Explanation covers both the biological shield function and continental climate stability role"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build an interactive volunteer portal where users can sign up for local planting events and digitally 'adopt a tree'",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Interactive Volunteer Portal: A section where users can sign up for local planting events or \"adopt a tree\" digitally."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Volunteer portal section includes a sign-up form for local planting events",
+        "Digital 'adopt a tree' feature is implemented with user interaction capability",
+        "Backend stores volunteer sign-ups and tree adoption records",
+        "Users can view their adopted trees or registered events"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create an educational blog section with articles titled 'How to plant in arid soil' and 'The Importance of Mycorrhizae in Algerian Reforestation'",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Educational Blog: Articles on \"How to plant in arid soil\" and \"The Importance of Mycorrhizae in Algerian Reforestation.\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "Blog section exists with these two specific article titles",
+        "Backend supports blog post storage and retrieval",
+        "Articles are accessible and display full educational content",
+        "Blog structure allows for future article additions"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create a key forest species showcase section featuring Aleppo Pine (Pinus halepensis) described as the backbone of Algerian forests with drought resilience, Atlas Cedar (Cedrus atlantica) as an endangered high-altitude species in Chréa and Theniet El Had parks, and Cork Oak (Quercus suber) with its economic importance for cork industry and Mediterranean biodiversity",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Your website should feature these native species to educate the audience: Aleppo Pine (Pinus halepensis): The backbone of Algerian forests, known for its resilience to drought. Atlas Cedar (Cedrus atlantica): A majestic, endangered species found in high-altitude national parks like Chréa and Theniet El Had. Cork Oak (Quercus suber): Economically vital for the cork industry and essential for Mediterranean biodiversity."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Species showcase displays all three trees: Aleppo Pine, Atlas Cedar, and Cork Oak",
+        "Each species includes its scientific name in parentheses",
+        "Aleppo Pine description mentions drought resilience and backbone role",
+        "Atlas Cedar description includes endangered status and the specific parks Chréa and Theniet El Had",
+        "Cork Oak description covers both cork industry economics and biodiversity importance"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a section explaining the National Reforestation Plan (PNR) as a state-led initiative to plant billions of trees over the next decade, focusing on Aleppo Pine, Cork Oak, and Atlas Cedar species",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "National Reforestation Plan (PNR): A state-led initiative aiming to plant billions of trees over the next decade, focusing on high-value species like Aleppo Pine, Cork Oak, and Atlas Cedar."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section explains the PNR initiative with the 'billions of trees' and 'next decade' timeframe",
+        "Content specifically lists the three focus species: Aleppo Pine, Cork Oak, and Atlas Cedar",
+        "State-led nature of the initiative is clearly communicated"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Include content about Urban Greening initiatives explaining new laws requiring 'green ratios' in urban development to combat heat island effects in cities like Algiers and Oran",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Urban Greening: New laws requiring \"green ratios\" in urban development to combat the \"heat island\" effect in cities like Algiers and Oran."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Urban Greening section exists with content about green ratio laws",
+        "Heat island effect is explained as the problem being addressed",
+        "Specific cities Algiers and Oran are mentioned as examples"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Implement a Sustainable & Modern visual design aesthetic with Deep Forest Green as the primary color and Desert Sand as the secondary accent color throughout the entire website",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Visual Style: Use a \"Sustainable & Modern\" aesthetic. Use Deep Forest Green as the primary color and Desert Sand as the secondary accent color."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary color scheme uses Deep Forest Green consistently across UI elements",
+        "Desert Sand is applied as secondary accent color",
+        "Overall design aesthetic conveys sustainability and modernity",
+        "Color palette is applied to buttons, headers, navigation, and key visual elements"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Add an Executive Summary section explaining Algeria as Africa's largest country with 4.1 million hectares of forest cover, highlighting the dual mission of protecting northern Mediterranean forests and expanding the Green Dam in steppe regions to prevent desertification",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Algeria, the largest country in Africa, faces a unique ecological challenge. While its northern territory is home to rich Mediterranean forests, the southern vastness is dominated by the Sahara. Currently, the forest cover stands at approximately 4.1 million hectares. The national mission is twofold: protecting existing biodiversity in the north and expanding the \"Green Dam\" to prevent desertification in the steppe regions."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Executive Summary section establishes Algeria as Africa's largest country",
+        "Content mentions the 4.1 million hectares forest cover statistic",
+        "Dual mission is clearly stated: protecting northern biodiversity and expanding Green Dam",
+        "Geographic context includes Mediterranean forests in the north and Sahara in the south"
+      ]
+    }
+  ],
+  "constraints": [
+    "Tone must be professional, urgent, yet hopeful throughout all content",
+    "Use Deep Forest Green as primary color and Desert Sand as secondary accent color exclusively"
+  ],
+  "nonGoals": [
+    "Multi-language support beyond English",
+    "Payment processing for tree adoptions",
+    "Real-time chat or messaging features",
+    "Social media API integrations",
+    "GPS or geolocation features for planting sites"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Atlas Mountains landscape for hero section background video frame or fallback image (atlas-mountains-hero.dim_1920x1080.png)",
+      "Aleppo Pine tree illustration or photo for species showcase (aleppo-pine.dim_600x400.png)",
+      "Atlas Cedar tree illustration or photo for species showcase (atlas-cedar.dim_600x400.png)",
+      "Cork Oak tree illustration or photo for species showcase (cork-oak.dim_600x400.png)",
+      "Green Dam aerial view or illustration showing the 1500km green belt (green-dam-aerial.dim_1200x600.png)",
+      "Wildfire damage scene in Algerian forest for crisis section (wildfire-crisis.dim_800x500.png)",
+      "Reforestation volunteers planting trees for volunteer portal section (volunteers-planting.dim_800x500.png)"
+    ],
+    "edits": []
+  }
+}

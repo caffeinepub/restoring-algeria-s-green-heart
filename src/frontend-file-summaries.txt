@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates all sections of the Algeria reforestation website in a single-page layout with header, main content sections, and footer.",
+  "frontend/src/components/Header.tsx": "Fixed navigation header with logo, site title, and smooth-scrolling navigation links to major sections of the website.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with the headline \"Restoring Algeria's Green Heart\", Atlas Mountains background image, call-to-action buttons, and scroll indicator.",
+  "frontend/src/components/ExecutiveSummary.tsx": "Introductory section explaining Algeria's ecological challenge with three key statistics cards covering geographic diversity, forest cover, and the dual mission.",
+  "frontend/src/components/Crisis.tsx": "Comprehensive section detailing the four major deforestation factors (wildfires, climatic stress, human impact, soil erosion) with statistics and imagery.",
+  "frontend/src/components/Solution.tsx": "Dedicated section for the Green Dam project featuring dimensions, historical context, and its role as a biological shield with aerial imagery.",
+  "frontend/src/components/NationalPlan.tsx": "Section explaining the National Reforestation Plan (PNR) with its goal to plant billions of trees and focus on three priority species.",
+  "frontend/src/components/SpeciesShowcase.tsx": "Visual showcase of three key forest species (Aleppo Pine, Atlas Cedar, Cork Oak) with images, scientific names, and detailed descriptions.",
+  "frontend/src/components/UrbanGreening.tsx": "Section covering urban greening initiatives, green ratio laws, and heat island mitigation efforts in Algiers and Oran.",
+  "frontend/src/components/VolunteerPortal.tsx": "Interactive portal with tabbed interface for signing up for planting events and adopting trees, integrated with backend using React Query mutations.",
+  "frontend/src/components/Blog.tsx": "Educational blog section displaying two articles fetched from the backend with a card-based selection interface.",
+  "frontend/src/components/Footer.tsx": "Comprehensive footer with branding, quick links, social media connections, and required attribution to caffeine.ai with UTM tracking.",
+  "frontend/src/index.css": "Global styles with custom OKLCH color system implementing Deep Forest Green and Desert Sand color palette for both light and dark modes, plus custom scrollbar styling.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom forest-green and desert-sand color tokens, Inter font family, and design system tokens."
+}
